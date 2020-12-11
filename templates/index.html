@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <script src="../static/index.js"></script>
+        
+        <!-- <script src="../static/test.js"></script> -->
+        <style>
+            .item:hover {
+                color: blue;
+            }
+            .jumbotron{
+                background-color:blanchedalmond;
+                background-size: cover;
+                text-shadow: black 0.05em 0.05em 0.05em;
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <!-- <div class="jumbotron mt-3"> -->
+            <div class="jumbotron">
+                <h1>Debate Simulation</h1>
+                <p>Write discussion main keyword below</p>
+                <input
+                id="keyword"
+                type="text"
+                placeholder="war"
+                />
+                <p>Write sentence below</p>
+                <input
+                id="sentence"
+                type="text"
+                placeholder="war is necessary"
+            />
+                <input type="radio" id="model" checked="checked" value="long">debate</input>
+            
+                <br/>
+                Positive opinion about keyword
+                <textarea id="context" style="width:80%; height:30%; display: block; margin-bottom: 10px;"></textarea>
+                <!-- <button type='submit' class="btn btn-secondary" onclick="suggestion()">Start!</button>         -->
+                Negative opinion about keyword
+                <textarea id="contextg" style="width:80%; height:30%; display: block; margin-bottom: 10px;"></textarea>
+                
+                <button class="btn btn-secondary" onclick="suggestion()">Debate!</button>
+            </div>
+        </div>
+    </body>
+</html>
